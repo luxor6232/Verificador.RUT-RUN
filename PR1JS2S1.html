@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JAVASCRIPTS</title>
+</head>
+
+<body>
+
+    <h1>VERIDICADOR DE RU/RUN</h1>
+        <script>
+              dv = function(T) {
+                var M=0,S=1;
+                for(;T;T=Math.floor(T/10))
+                    S=(S+T%10*(9-M++%6))%11;
+                    return S?S-1:'K';
+                }
+                alert('El digito verificador del rut ingresado es '+
+                dv(prompt('Ingrese rut para mostrar su digito verificador:')));
+
+            
+        </script>
+</body>
+</html>
